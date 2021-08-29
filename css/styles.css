@@ -1,0 +1,372 @@
+/*Стиль для index.html*/
+body {
+  font-family: 'roboto', sans-serif;
+  font-weight: 400;
+  color: #757575;
+}
+
+:root {
+  --main-title-color: #ffffff;
+  --secondary-title-color: #212121;
+  --main-text-color: #757575;
+  --secondary-text-color: #000000;
+  --accent-color: #2196f3;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0px;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*убрали точки*/
+.list {
+  list-style: none;
+}
+
+/* убрать подчеркивание*/
+.link {
+  text-decoration: none;
+}
+.container {
+  width: 1200;
+  padding: left 15px;
+  padding-right: 1x;
+  margin: 0 auto;
+}
+/*-----HEADER------*/
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-logo {
+  margin-right: 70px;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+.header-item:not(:last-child) {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.header-accent {
+  color: var(--secondary-text-color);
+}
+
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-ring {
+  margin-left: auto;
+  display: flex;
+}
+
+.header-mail,
+.header-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+  margin-right: 40px;
+}
+
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--accent-color);
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+
+/*----Контейнер Герой----*/
+.hero {
+  background-color: #2f303a;
+  padding-bottom: 94px;
+  padding: top 94px;
+}
+
+.hero-container {
+  display: inline;
+  flex-grow: 1;
+  /*padding: 200px 0 200px 452px;*/
+  padding-bottom: 94px;
+  padding: top 94px;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+  border-radius: 4px;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  vertical-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-title-color);
+}
+.hero-button.btn {
+  display: flex;
+  width: 300px;
+  height: 50px;
+  padding: 30px;
+  text-align: center;
+  align-items: center;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*--Контейнер преимущества работы--*/
+.about-container {
+  width: 1200px;
+  padding: left 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  padding-top: 94px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+  margin-top: 0;
+  background-color: #ccc;
+  margin: 0px;
+}
+
+.about-list {
+  outline: 1px;
+  color: aqua;
+  padding: 20;
+  margin: 0;
+  list-style: none;
+  display: flex;
+}
+.about-item {
+  outline: 1px;
+  padding-right: 24px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
+
+.about-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+/* ---  Примеры работ---*/
+
+.gallery section {
+  padding: top 94px;
+  padding: bottom 94px;
+  padding: left 15px;
+  padding: 15px;
+}
+
+.gallery-title {
+  margin: bottom 50px;
+}
+.gallery-list {
+  display: flex;
+}
+.gallery-item {
+  outline: 1px solid teal;
+  flex-basis: calc(100% / 3);
+}
+
+.gallery-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--secondary-title-color);
+}
+
+/*---Команда работников---*/
+
+.masters {
+  background-color: #f5f4fa;
+}
+
+.masters-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--secondary-text-color);
+}
+.masters {
+  background-color: #f5f4fa;
+}
+.masters-member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+.masters-text {
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+/*---ПОДВАЛ---*/
+
+.footer {
+  background-color: #2f303a;
+}
+.footer-accent {
+  color: #ffffff;
+}
+.footer-address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-mail,
+.footer-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*Cтиль для Портфолио*/
+.container {
+  width: 1200;
+
+  padding: left 15px;
+  padding-right: 1x;
+  margin: 0 auto;
+}
+.container .hidden {
+  display: flex;
+  align-items: center;
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.portfolio-button {
+  width: 70px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-color);
+}
+
+/*.hidden {
+  display: block;
+  padding-top: 48 px;
+  padding-bottom: 48;
+}
+
+.portfolio-list {
+  display: flex;
+  align-items: center;
+  display: flex;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.portfolio-item :not(:last-child) {
+  margin:} ;*/
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: #f5f4fa;
+  background-color: var(--accent-color);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.card-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-title-color);
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
