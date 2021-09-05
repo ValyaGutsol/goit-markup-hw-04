@@ -105,10 +105,12 @@ img {
 .header-ring {
   margin-left: auto;
   display: flex;
+  align-items: center;
 }
 
 .header-mail,
 .header-tel {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -119,10 +121,6 @@ img {
 
 .header-mail:hover,
 .header-mail:focus {
-  color: var(--accent-color);
-}
-.header-tel:hover,
-.header-tel:focus {
   color: var(--accent-color);
 }
 
@@ -138,6 +136,7 @@ img {
   padding: left 15px; 
   padding: right 15px;
   margin: auto;
+  margin-left: 0pt;
 }
 
 .hero-title {
@@ -149,12 +148,15 @@ img {
   text-align: center;
   text-transform: uppercase;
   color: var(--main-title-color);
-  border-radius: 4px;
-  margin: top 150px; 
+  margin-left: 150px; 
   margin: bottom 280px;
+  margin: bottom 20px; ;
+  padding-top: 40px;
+  border: ;
+  }
 
 
-.hero-button {
+.hero-buton {
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -172,6 +174,15 @@ img {
   border-radius: 4px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 20px;
+  border-radius: 4px;
+  color: var(--main-title-color);
+  background-color: var(--accent-color);
+}
+
+.hero-button.btn:hover,
+.hero-button.btn:focus {
+  color: var(--accent-color);
 }
 
 /*--Контейнер преимущества работы--*/
@@ -181,11 +192,12 @@ img {
   padding-right: 15px;
   padding-bottom: 94px;
   padding-top: 94px;
-  padding-top: 0px;
-  margin-bottom: 0px;
-  margin-top: 0;
+  margin-bottom: 20px;
+  margin: top 20px;;
   background-color: #ccc;
-  margin: 0px;
+  margin-left: 30px;
+  margin-right: auto;
+  
 }
 
 .about-list {
@@ -227,14 +239,17 @@ img {
 
 }
 .contrainer-gallery {
-  width: 1200px; ;
-  margin-left: 0 auto;
-  margin-right: 0 auto;
-  padding: left 30px;
-  padding: right 30px;
+  width: 1200px; 
+  margin-bottom: 20px;
+  margin: top 20px;
+  margin-left: 30px;
+  margin-right: auto;
+  padding: left 15px;
+  margin-right: auto;
   background-color: #e5e5e5;
 }
 
+  
 .gallery-pre {
   width: 370px;
   padding: top 94px;
@@ -274,13 +289,12 @@ img {
   margin-right: 30px;
   flex: basis calc((100% / 3) - 30px);
 
-
 }
 .gallery-item {
   width: 370;
   display: flex;
-   margin-top:-20pt;
-  margin-left:-20px;
+   margin-top:-30pt;
+  margin-left:-30px;
 }
 
 /*---Команда работников---*/
@@ -370,7 +384,6 @@ text-align: center;
   margin-top: 10px;
   margin: bottom 10px;
   margin-left: 10px;
-
 }
 
 .footer-item{
@@ -406,13 +419,15 @@ text-align: center;
   margin-bottom: 15px;
 }
 
-.footer-mail-link{
+.footer-mail-link{}
 
 .footer-tel-link{
 }
 
 /*-----HEADER-----*/
-<!--шапка страницы портфолио-- > .header {
+<!--шапка страницы портфолио-- >
+
+ .header {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -449,7 +464,6 @@ text-align: center;
 .header-accent {
   color: var(--secondary-text-color);
 }
-
 .header-link {
   font-weight: 500;
   font-size: 14px;
@@ -463,7 +477,9 @@ text-align: center;
   color: var(--accent-color);
 }
 
-<!--авторизация-- > .header-ring {
+<!--авторизация-- > 
+
+.header-ring {
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -493,7 +509,7 @@ text-align: center;
 .container-portfolio {
   width: 1200;
   padding: left 15px;
-  padding-right: 1x;
+  padding-right: 1px;
   margin: 0 auto;
 }
 .hidden {
@@ -601,7 +617,7 @@ text-align: center;
      box-shadow;
      margin-bottom: 20px;
 
-      image-rendering: var(--card-set-gar) {
+      .image-rendering: var(--card-set-gar) {
       display: block;
       max- width : 100 %;
       height:auto;
