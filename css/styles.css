@@ -372,6 +372,9 @@ text-align: center;
   margin-left: auto;
   margin-bottom: auto;
   height:auto;
+  padding-top: 40pt;
+  padding-bottom: 40px;
+  padding-left: 70px;
 }
 
 .logo-link {
@@ -411,7 +414,6 @@ margin-bottom: 30px;
   
 }
 .footer-address link{
-
 }
 
 .footer-mail,
