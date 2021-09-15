@@ -3,6 +3,7 @@ body {
   font-family: 'roboto', sans-serif;
   font-weight: 400;
   color: #000000;
+  margin: 0px;
 }
 
 :root {
@@ -140,7 +141,9 @@ img {
 
 .container {
   width: 1200px;
-  padding-bottom: 120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
   padding: left ; 
   padding: right;
 }
@@ -189,9 +192,12 @@ img {
 }
 
 /*--Контейнер преимущества работы--*/
+.about{
+  padding-bottom: 0
+}
 .about-container {
   padding-top: 20px;
-  margin-bottom: 94px;
+  margin-bottom: 40px;
   background-color: #ccc;
   margin-left: 30px;
   margin-right: auto;
@@ -208,7 +214,7 @@ img {
   margin: auto;
   list-style: none;
   display: flex;
-  padding: top 94px;
+  padding: top 30px;
 }
 .about-item {
   outline: 1px;
@@ -239,24 +245,22 @@ img {
 
 .section.gallery {
   background-color: #F5F4FA;
-  padding-top:94px; 
+  padding-top: 94px; 
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.gallery :not(:last-child) {
-  margin: right 0;}
-  
-.gallery-pre {
-  width: 370px;
-  text-align: center;
+
 }
 
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/*.gallery :not(:last-child) {
+}*/
+
 .gallery-title {
-  margin-bottom: 50px; 
+  margin-bottom: 30px; 
   padding-top: 94px;
 }
 
@@ -269,32 +273,23 @@ img {
   color: var(--secondary-title-color);
 }
 
-.gallery-pre-list .gallery-item {
-  margin-bottom: 0px;
-}
-
  .gallery-list {
   display: flex;
-   margin-left: auto;
-  margin-top:-30px;
-  margin-left:-30px;
-  margin-left: 900px;
-}
-
-.gallery-item {
-  flex-basis: calc(100% / 3 -30px);
-  display: flex;
-   margin-left: 30px;
-   margin-top:30px ; 
+ /* margin-top:-30px;
+  margin-left:-30px;*/
   
 }
-
-.gallery-item {
-  width: 370;
-  display: flex;
-  margin-top: 30px;
-  margin-left:30px;
+.gallery-item:not(:last-child) {
+  margin-right: 30px;
 }
+
+/*.gallery-item {
+   *width: 370;
+  flex-basis: calc(100% / 3 -30px);
+   margin-left: 35px;
+   margin-top: 30px; 
+   margin-left: 30px;
+}*/
 
 /*---Команда работников---*/
 
@@ -304,37 +299,28 @@ padding-right: 94px;
 flex-wrap: wrap;
 }
 
-.masters-pre-text {
-  margin-bottom: 200px;
-  margin-top:94px ;
-
-}
 .maters-title {
-  margin-bottom: 50px;
-  padding-bottom: 50px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
-
 .masters-list {
   display: flex;
   margin-left: 20px;
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: center;
   padding-bottom: 94px;
 }
-
-
 .masters-item:not(:last-child) {
   margin-right: 30px;
-  flex-basis: calc (100% / 4 -30px);
+  flex-basis: calc(100% / 4 -30px);
   margin-left: 30px; 
 }
-
 .masters-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  color: var(--secondary-text-colorecondary-title-cr);
+  color: var(--secondary-title-color);
 }
 .masters-member  {
   text-align: center;
@@ -342,10 +328,9 @@ flex-wrap: wrap;
   
 }
 .masters-item-content {
-  margin-top: 100;
+  margin-top: 100px;
   border: 30px;
 }
-
 .masters-member {
   font-weight: 500px;
   font-size: 16px;
@@ -416,6 +401,7 @@ text-align: center;
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-color);
+  
 }
 
 <!--авторизация-- > 
@@ -424,11 +410,12 @@ text-align: center;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+
 }
 
 .header-mail,
 .header-tel {
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -447,11 +434,11 @@ text-align: center;
 
 /* Портфолио  презентация*/
 
-.container-portfolio {
-  width: 1200;
-  padding: left 15px;
-  padding-right: 1px;
-  margin: 0 auto;
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
 }
 
 .section{
@@ -460,17 +447,10 @@ padding-right: 94px;
 }
 
 .portfolio-list {
-  width: 1200px;
-  padding-top: 94px;
   display: flex;
-  align-items: center;
-}
-
-.portfolio-list {
-  margin: 30px;
-  width: 70px;
+  margin-left: 30px;
   padding-left: 22px;
-  padding-top: 6px;
+  padding-top: 8px;
   padding-bottom: 10px;
 }
 
@@ -504,20 +484,21 @@ padding-right: 94px;
 .section{
 padding-left: 94px;
 padding-right: 94px;
+margin: auto;
 }
 
-.card {
-  display: block;
-  flex-basis: calc(100% /3-30);
-  padding-left: 94px;
-  padding-right: 94px;
+.container {
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-.card-list-list {
- flex-wrap: wrap;
-padding-bottom: 94px;
+.card-list {
+  display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 94px;
    margin-left:-30px;
-  margin-top: -30px;
+   margin-top: 20px;
 }
 
   .card-title {
@@ -527,13 +508,20 @@ padding-bottom: 94px;
     color: var(--secondary-title-color);
     padding-top: 30px;
     padding-bottom: 4px;
-    
+    margin-top: -30px;
+  outline: rgb(49, 21, 31);
   }
-   .card-item  
+
+  .card-item {
+     align-items: center;
+     margin-left: 15px;
+     margin-right: 15px;
+  } 
+
    .cards-name{
-    margin-top : 30px;
-    margin-left: 30px;
-   flex-basis: calc((100%-9px)/3);
+   padding-left: 30px;
+    padding-right: 30px;
+    flex-basis: calc((100%-9px)/3);
     border: 0px;
     margin-top: 10px;
     box-shadow :rgba(146, 117, 117, 0.6);
@@ -546,8 +534,7 @@ padding-bottom: 94px;
     color: #757575;
   }
 
-  .card-text {
-
+    .card-text {
     padding: 15px;
     padding-left: 10px;
     margin-bottom: 15px;
@@ -568,6 +555,7 @@ padding-bottom: 94px;
 }
 .container {
  width: 1200px;
+ margin: auto;
 }
 
 .logo-link {
@@ -582,6 +570,7 @@ padding-bottom: 94px;
 margin-top: 30px;
 margin-bottom: 30px;
 }
+
 .footer-list:hover,
 .footer-list:focus {
   color: var(--accent-color);
@@ -631,7 +620,7 @@ color: var(--accent-color);
 
 
 .footer-tel link{
-margin-bottom: 60px; 
+  margin-bottom: 60px; 
   margin-top: 15px;
 }
 
