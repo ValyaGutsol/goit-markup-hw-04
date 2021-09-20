@@ -204,13 +204,9 @@ img {
 }
 
 .about-title {
- /* margin-bottom: 15px;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;*/
-  color: var(--secondary-text-color);
+ margin-bottom: 10px;
 }
+
 .about-text {
   font-size: 14px;
   line-height: 1.71;
