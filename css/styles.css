@@ -242,8 +242,6 @@ img {
 .gallery-item:not(:last-child) {
   margin-right: 30px;
   align-items: center;
-  
-
 }
 
 /*---Команда работников---*/
@@ -251,11 +249,13 @@ img {
 .masters-title {
  font-size: 36px;
   line-height: 1.17;
-  margin-right: 0px;
+  text-align: center;
+
   color: var(--secondary-title-color);
 }
 .masters-title {
   margin-bottom: 50px;
+
  
 }
 
